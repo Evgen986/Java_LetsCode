@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="LettCode" />
+        <module name="Java_LetsCode" />
       </profile>
     </annotationProcessing>
   </component>

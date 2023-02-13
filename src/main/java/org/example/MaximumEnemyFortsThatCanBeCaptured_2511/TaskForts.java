@@ -1,9 +1,16 @@
 package org.example.MaximumEnemyFortsThatCanBeCaptured_2511;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Arrays;
+
 public class TaskForts {
     public static void main(String[] args) {
         int [] fort = {-1,-1,0,1,0,0,1,-1,1,0};
         System.out.println(captureForts(fort));
+        readInFile(fort);
     }
     public static int captureForts(int[] forts) {
         int count = -1;
@@ -43,5 +50,24 @@ public class TaskForts {
             }
         }
         return maxCount;
+    }
+    public static void readInFile(int [] array) {
+        File file = new File("test.txt");
+        try{
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+            FileWriter fw = new FileWriter(file, true);
+            PrintWriter pw = new PrintWriter(fw);
+            pw.println(Arrays.toString(array));
+            pw.close();
+        } catch (IOException e){
+            System.out.println("Ошибка в работе с файлом: " + e);
+        }
+    }
+    public static int [] readInFile(){
+        File file = new File("test.txt");
+
+        return result;
     }
 }
