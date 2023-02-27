@@ -1,9 +1,6 @@
 package org.example.MaximumEnemyFortsThatCanBeCaptured_2511;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.Arrays;
 
 public class TaskForts {
@@ -65,9 +62,22 @@ public class TaskForts {
             System.out.println("Ошибка в работе с файлом: " + e);
         }
     }
-    public static int [] readInFile(){
-        File file = new File("test.txt");
-
-        return result;
+//    public static int [] readInFile(){
+//        File file = new File("test.txt");
+//        try {
+//            FileReader fr = new FileReader(file);
+//            BufferedReader br = new BufferedReader(fr);
+//            String [] array = br.readLine().replace("[", "").replace("]", "")
+//                    .split(" ");
+//            int [] arr = new int[array.length];
+//            for (int i = 0; i < arr.length; i++) {
+//
+//            }
+//        } catch (FileNotFoundException e) {
+//            System.out.println("Файл не найден: " + e);
+//        } catch (IOException e) {
+//            System.out.println("Не удалось считать из файла: " + e);
+//        }
+//        return arr;
     }
-}
+//}
